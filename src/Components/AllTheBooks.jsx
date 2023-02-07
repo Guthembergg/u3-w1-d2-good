@@ -5,8 +5,8 @@ const AllTheBooks = () => {
   return (
     <Container>
       <Row className="align-items-center">
-        {booksFantasy.map((book) => (
-          <Col className="col-4 my-4">
+        {booksFantasy.map((book, index) => (
+          <Col className="col-4 my-4" key={book.asin}>
             <Card
               style={{ width: "18rem", height: "auto" }}
               className="text-center "
