@@ -1,15 +1,18 @@
-import booksFantasy from "../../public/Data/fantasy.json";
+import booksFantasy from "../Data/fantasy.json";
 import { Card, Container, Row, Col } from "react-bootstrap";
 
 const AllTheBooks = () => {
   return (
     <Container>
-      <Row>
+      <Row className="align-items-center">
         {booksFantasy.map((book) => (
-          <Col>
-            <Card style={{ width: "18rem" }}>
+          <Col className="col-4 my-4">
+            <Card
+              style={{ width: "18rem", height: "45rem" }}
+              className="text-center "
+            >
               <Card.Img variant="top" src={book.img} />
-              <Card.Body>
+              <Card.Body className="d-flex flex-column justify-content-between">
                 <Card.Title>{book.title}</Card.Title>
                 <Card.Text>{book.category}</Card.Text>
                 <Card.Text>{book.price}</Card.Text>

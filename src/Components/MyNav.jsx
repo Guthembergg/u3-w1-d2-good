@@ -4,7 +4,7 @@ function MyNav() {
   return (
     <Navbar bg="secondary" expand="lg">
       <Navbar.Brand href="#home" className="text-white">
-        Bar Narciso
+        Books Narciso
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
