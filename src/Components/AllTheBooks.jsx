@@ -8,7 +8,7 @@ const AllTheBooks = () => {
         {booksFantasy.map((book) => (
           <Col className="col-4 my-4">
             <Card
-              style={{ width: "18rem", height: "45rem" }}
+              style={{ width: "18rem", height: "auto" }}
               className="text-center "
             >
               <Card.Img variant="top" src={book.img} />
