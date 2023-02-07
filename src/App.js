@@ -1,4 +1,5 @@
 import "./App.css";
+import AllTheBooks from "./Components/AllTheBooks";
 import MyFooter from "./Components/MyFooter";
 import "./Components/MyNav";
 import MyNav from "./Components/MyNav";
@@ -9,6 +10,7 @@ function App() {
     <>
       <MyNav></MyNav>
       <Welcome></Welcome>
+      <AllTheBooks></AllTheBooks>
       <MyFooter></MyFooter>
     </>
   );
